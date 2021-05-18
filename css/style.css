@@ -71,16 +71,85 @@
 .dropdown:hover .dropbtn {
   background-color: black; }
 
+.header_img_section {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(50%);
+  height: 400px;
+  background-image: url("../assets/img_header/sailboat.jpg"); }
+  .header_img_section button {
+    background-color: black;
+    color: white;
+    position: absolute;
+    font-size: 24px !important;
+    bottom: 0;
+    padding: 10px 16px;
+    margin: 20px;
+    border: none;
+    cursor: pointer; }
+    .header_img_section button:hover {
+      background-color: #009688 !important; }
+
+.team-section {
+  text-align: center;
+  padding-top: 64px !important;
+  padding-bottom: 64px !important; }
+  .team-section .team-container {
+    padding-bottom: 30px; }
+    .team-section .team-container h2 {
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-weight: 400;
+      padding-bottom: 20px;
+      font-size: 30px; }
+    .team-section .team-container span {
+      font-size: 18px; }
+
+.container_team {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2vw;
+  padding-top: 30px; }
+  .container_team div {
+    height: 315px;
+    padding-bottom: 10px; }
+    .container_team div h2 {
+      font-family: "Segoe UI", Arial, sans-serif;
+      padding: 20px;
+      font-size: 24px !important;
+      font-weight: 400 !important; }
+    .container_team div .avatar_style {
+      border-radius: 50%;
+      width: 170px;
+      height: 170px; }
+    .container_team div span {
+      padding: 20px;
+      padding: 10px; }
+
+@media (max-width: 771px) {
+  .container_team {
+    grid-template-columns: 1fr 1fr; }
+    .container_team div {
+      padding: 10px; } }
+
+@media (max-width: 771px) and (max-width: 600px) {
+  .container_team {
+    grid-template-columns: 1fr; }
+    .container_team div {
+      padding: 10px; } }
+
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  line-height: 1.5;
+  font-family: Verdana,sans-serif; }
 
 .main_container {
   font-family: sans-serif;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 10px;
+  grid-template-rows: 1fr 1fr  1fr;
   grid-template-areas: 'header header header' 'section section section' 'footer footer footer'; }
 
 header {
