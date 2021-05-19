@@ -139,6 +139,41 @@
     .container_team div {
       padding: 10px; } }
 
+.work_section {
+  padding: 60px 30px;
+  background-color: #333333 !important; }
+
+.work_container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1vw; }
+  .work_container .text_container {
+    color: white; }
+  .work_container .container_img {
+    background-color: white;
+    height: auto;
+    padding-bottom: 10px; }
+    .work_container .container_img h2 {
+      font-family: "Segoe UI", Arial, sans-serif;
+      padding: 20px;
+      font-size: 24px !important;
+      font-weight: 400 !important; }
+    .work_container .container_img img {
+      width: 100%; }
+    .work_container .container_img ul {
+      list-style: none; }
+      .work_container .container_img ul li {
+        padding: 10px; }
+
+@media (max-width: 1130px) {
+  .work_container {
+    grid-template-columns: 1fr 1fr; } }
+
+@media (max-width: 1130px) and (max-width: 930px) {
+  .work_container {
+    grid-template-columns: 1fr; } }
+
 * {
   padding: 0;
   margin: 0;
