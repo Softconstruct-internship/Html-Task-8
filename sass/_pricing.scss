@@ -1,0 +1,96 @@
+.pricing_section {
+    padding: 60px 30px;
+    background-color: white;
+}
+.pricing_container {
+    div {
+        &:hover {
+            box-shadow: 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
+        }
+    }
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1vw;
+
+    .container {
+        background-color: white;
+        height: auto;
+        padding-bottom: 10px;
+        h2 {
+            font-family: "Segoe UI", Arial, sans-serif;
+            padding: 20px;
+            font-size: 24px !important;
+            font-weight: 400 !important;
+        }
+
+        ul {
+            border: 1px solid #ccc !important;
+            list-style: none;
+            li:first-child {
+                padding: 10px;
+                background-color: black;
+                color: white;
+            }
+            li {
+                text-align: center;
+                border-bottom: 1px solid #ddd;
+                padding: 15px;
+            }
+        }
+    }
+    .second_container {
+        background-color: white;
+        height: auto;
+        padding-bottom: 10px;
+        h2 {
+            font-family: "Segoe UI", Arial, sans-serif;
+            padding: 20px;
+            font-size: 24px !important;
+            font-weight: 400 !important;
+        }
+        ul {
+            border: 1px solid #ccc !important;
+            list-style: none;
+            li:first-child {
+                padding: 10px;
+                color: #fff !important;
+                background-color: #666666 !important;
+            }
+            li {
+                text-align: center;
+                border-bottom: 1px solid #ddd;
+                padding: 15px;
+            }
+        }
+    }
+    .pric_li {
+        font-size: 30px;
+        p {
+            font-size: 15px;
+            opacity: 0.6;
+        }
+    }
+    .button_li {
+        background-color: #f0f0f0 !important;
+        button {
+            font-size: 15px;
+            line-height: 1.5;
+            cursor: pointer;
+            padding: 12px 24px !important;
+            border: none;
+            color: white;
+            background-color: #009688 !important;
+            &:hover {
+                background-color: rgb(194, 193, 193) !important;
+                color: black;
+            }
+        }
+    }
+}
+
+@media (max-width: 930px) {
+    .pricing_container {
+        grid-template-columns: 1fr;
+    }
+}
