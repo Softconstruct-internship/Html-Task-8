@@ -13,21 +13,3 @@
     font-family: Verdana,sans-serif;
 }
 
-.main_container {
-    font-family: sans-serif;
-    display: grid;
-    // min-height: 100vh; 
-    grid-template-columns:   1fr ;
-    grid-template-rows:   1fr 1fr  1fr;
-    // gap: 10px;
-    grid-template-areas: 
-    'header header header'
-    'section section section'
-    'footer footer footer'
-}
-
-@each $name in header,  section, footer {
-    #{$name} {
-        grid-area: $name;
-    }
-}

@@ -1,9 +1,9 @@
 .footer {
-    background-color: black;
+    background-color: $font_color_bl;
     height: 170px;
     padding: 40px;
     text-align: center;
-    color: white;
+    color: $font_color;
     h4{
         font-family: "Segoe UI",Arial,sans-serif;
         font-weight: 400;
@@ -17,11 +17,11 @@
         #icon_style {
             padding: 8px 16px;
             color: #fff !important;
-            background-color: #009688 !important;
-            color: white;
+            background-color: $background-color !important;
+            color: $font_color;
             &:hover {
                 background-color: #bdb6b6;
-                color: black;
+                color: $font_color_bl;
             }
         }
     }
@@ -29,7 +29,7 @@
         margin-top: 16px !important;
         margin-bottom: 16px !important;
         a {
-            color: white;
+            color: $font_color;
             &:hover {
                 color: green;
             }

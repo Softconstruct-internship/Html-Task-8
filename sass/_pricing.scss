@@ -1,6 +1,6 @@
 .pricing_section {
     padding: 60px 30px;
-    background-color: white;
+    background-color: $font_color;
 }
 .pricing_container {
     div {
@@ -14,7 +14,7 @@
     grid-gap: 1vw;
 
     .container {
-        background-color: white;
+        background-color: $font_color;
         height: auto;
         padding-bottom: 10px;
         h2 {
@@ -29,8 +29,8 @@
             list-style: none;
             li:first-child {
                 padding: 10px;
-                background-color: black;
-                color: white;
+                background-color: $font_color_bl;
+                color: $font_color;
             }
             li {
                 text-align: center;
@@ -40,7 +40,7 @@
         }
     }
     .second_container {
-        background-color: white;
+        background-color: $font_color;
         height: auto;
         padding-bottom: 10px;
         h2 {
@@ -54,7 +54,7 @@
             list-style: none;
             li:first-child {
                 padding: 10px;
-                color: #fff !important;
+                color: $font_color !important;
                 background-color: #666666 !important;
             }
             li {
@@ -79,11 +79,11 @@
             cursor: pointer;
             padding: 12px 24px !important;
             border: none;
-            color: white;
+            color: $font_color;
             background-color: #009688 !important;
             &:hover {
                 background-color: rgb(194, 193, 193) !important;
-                color: black;
+                color: $font_color_bl;
             }
         }
     }

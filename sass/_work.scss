@@ -8,10 +8,10 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1vw;
     .text_container {
-        color: white;
+        color: $font_color;
     }
     .container_img {
-        background-color: white;
+        background-color: $font_color;
         height: auto;
         padding-bottom: 10px;
         h2 {

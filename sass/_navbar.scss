@@ -1,22 +1,24 @@
 .main_header {
-    color: #fff !important;
-    background-color: black;
+    color: $font_color !important;
+    background-color: $font_color_bl;
     width: 100%;
-    position: fixed;
+    position: sticky;
+    top: 0;
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     > ul {
         display: flex;
         li {
             list-style: none;
-            color: white !important;
+            color: $font_color !important;
         }
         .logo {
             background-color: #009688 !important;
             a {
                 &:hover {
                     background-color: rgb(194, 193, 193) !important;
-                    color: black;
+                    color: $font_color_bl;
                 }
             }
         }
@@ -26,10 +28,10 @@
         display: inline-block;
         padding: 8px 16px;
         text-decoration: none;
-        color: white;
+        color: $font_color;
         &:hover {
-            background-color: white;
-            color: black;
+            background-color: $font_color;
+            color: $font_color_bl;
         }
     }
 
@@ -39,22 +41,22 @@
         }
     }
     .another_style {
-        color: white;
+        color: $font_color;
         &:hover {
-            background-color: #009688 !important;
+            background-color: $background-color !important;
         }
     }
 }
 
 .dropbtn {
-    background-color: black;
-    color: white;
+    background-color: $font_color_bl;
+    color: $font_color;
     padding: 8px 16px;
     font-size: 16px;
     border: none;
     &:hover {
         background-color: rgb(194, 193, 193) !important;
-        color: black;
+        color: $font_color_bl;
     }
 }
 
@@ -63,21 +65,21 @@
     display: inline-block;
     &:hover {
         background-color: rgb(194, 193, 193) !important;
-        color: black;
+        color: $font_color_bl;
     }
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: $font_color;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
+    color: $font_color_bl;
     padding: 8px 16px;
     text-decoration: none;
     display: block;
@@ -92,5 +94,5 @@
 }
 
 .dropdown:hover .dropbtn {
-    background-color: black;
+    background-color: $font_color_bl;
 }

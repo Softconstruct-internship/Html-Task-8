@@ -6,8 +6,8 @@
     height: 400px;
     background-image: url("../assets/img_header/sailboat.jpg");
     button {
-        background-color: black;
-        color: white;
+        background-color: $font_color_bl;
+        color: $font_color;
         position: absolute;
         font-size: 24px !important;
         bottom: 0;
@@ -16,7 +16,7 @@
         border: none;
         cursor: pointer;
         &:hover {
-            background-color: #009688 !important;
+            background-color: $background-color !important;
         }
     }
 }
